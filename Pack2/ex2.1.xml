@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE empresa_libros [
-  <!ELEMENT empresa_libros (operaciones)>
+  <!ELEMENT empresa_libros (operaciones)*>
   <!ELEMENT operaciones (compra | venda)*>
 
   <!ELEMENT compra (titulo+, nom_proveedor, dia, mes, any)>
-  <!ELEMENT venda (titulo+, cantidad, lliurat?, import)>
+  <!ELEMENT venda (titulo+, cantidad, lliurat, import)>
 
   <!ELEMENT titulo (#PCDATA)>
   <!ELEMENT nom_proveedor (#PCDATA)>
@@ -29,7 +29,6 @@
       <mes>10</mes>
       <any>2024</any>
     </compra>
-
     <venda>
       <titulo>Quijote</titulo>
       <titulo>El principito</titulo>
@@ -37,5 +36,20 @@
       <lliurat>true</lliurat>
       <import moneda="EUR">125.2</import>
     </venda>
+  </operaciones>
+  <operaciones>
+  <compra>
+  <titulo>Gato tonto</titulo>
+      <nom_proveedor>Ramis i Ramis</nom_proveedor>
+      <dia>02</dia>
+      <mes>10</mes>
+      <any>2024</any>
+  </compra>
+  <venda>
+    <titulo>Antoine Griezmann</titulo>
+      <cantidad>2</cantidad>
+      <lliurat>true</lliurat>
+      <import moneda="EUR">125.2</import>
+  </venda>
   </operaciones>
 </empresa_libros>
