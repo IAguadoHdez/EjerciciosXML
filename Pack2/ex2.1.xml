@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa_libros [
+  <!ELEMENT empresa_libros (operaciones)>
+  <!ELEMENT operaciones (compra | venda)*>
+
+  <!ELEMENT compra (titulo+, nom_proveedor, dia, mes, any)>
+  <!ELEMENT venda (titulo+, cantidad, lliurat?, import)>
+
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT nom_proveedor (#PCDATA)>
+  <!ELEMENT dia (#PCDATA)>
+  <!ELEMENT mes (#PCDATA)>
+  <!ELEMENT any (#PCDATA)>
+  <!ELEMENT cantidad (#PCDATA)>
+  <!ELEMENT lliurat (#PCDATA)>
+  <!ELEMENT import (#PCDATA)>
+  
+  <!ATTLIST import moneda CDATA #REQUIRED>
+]>
+
+
+<empresa_libros>
+  <operaciones>
+    <compra>
+      <titulo>Quijote</titulo>
+      <titulo>Cien años de soledad</titulo>
+      <nom_proveedor>Ramis i Ramis</nom_proveedor>
+      <dia>02</dia>
+      <mes>10</mes>
+      <any>2024</any>
+    </compra>
+
+    <venda>
+      <titulo>Quijote</titulo>
+      <titulo>El principito</titulo>
+      <cantidad>2</cantidad>
+      <lliurat>true</lliurat>
+      <import moneda="EUR">125.2</import>
+    </venda>
+  </operaciones>
+</empresa_libros>

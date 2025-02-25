@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--Faltaba en la linea el "encoding="UTF.-8"-->
+<documento>
+<p>Mi Primer <destacar importancia="1">documento
+XML</destacar> <!-- Destacar el error que tenia era el como estaba puesto el atributo que estaba puesto sin comillas ""--> 
+
+</p> <!-- El simbolo de p esta mal escrito estaba puesto en ] y es el simbolo puesto -->
+
+
+
+<p>Comienza con la etiqueta &lt;documento&gt;</p> <!--Para que sea legible documento , le he tenido que cambiar el > y ponerle el simbolo correspondiente para que sea legible-->
+<p>A continuacion colocamos un elemento sin contenido</p>
+<imagen fichero="imagen.gif"/> <!--La linea estaba mal cerrada , le he añadido />-->
+</documento>

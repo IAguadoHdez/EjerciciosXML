@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--De nuevo a la linea original estaba puesto sin el "encoding" asi que se lo he agregado-->
+<libros>
+
+<libro id="quijote">
+<titulo>El Quijote</titulo>
+<autor nombre="cervantes"></autor> <!--Considero que el error que tenia era que repetia el atributo nombre dos veces asi que lo he eliminado y he cerrado bien la linea-->
+<descripcion>Es el mejor libro de cervantes.</descripcion> <!--Hay un < en el mensaje que no se entiende porque esta puesto y se elimina para corregirlo y ya.-->
+
+</libro> <!--Estaba mal cerrado y estaba puesto este simbolo ] , asi que he cerrado bien la linea-->
+</libros>
