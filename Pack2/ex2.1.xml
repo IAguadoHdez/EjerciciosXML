@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE empresa_libros [
-  <!ELEMENT empresa_libros (operaciones)*>
-  <!ELEMENT operaciones (compra | venda)*>
+  <!ELEMENT empresa_libros (operaciones)+>
+  <!ELEMENT operaciones (compra | venda)+>
 
   <!ELEMENT compra (titulo+, nom_proveedor, dia, mes, any)>
   <!ELEMENT venda (titulo+, cantidad, lliurat, import)>
@@ -15,7 +15,7 @@
   <!ELEMENT lliurat (#PCDATA)>
   <!ELEMENT import (#PCDATA)>
   
-  <!ATTLIST import moneda CDATA #REQUIRED>
+  <!ATTLIST import moneda (LIB | DOL | EUR) #REQUIRED>
 ]>
 
 
@@ -37,6 +37,7 @@
       <import moneda="EUR">125.2</import>
     </venda>
   </operaciones>
+
   <operaciones>
   <compra>
   <titulo>Gato tonto</titulo>

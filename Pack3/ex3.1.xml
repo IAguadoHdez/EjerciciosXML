@@ -5,32 +5,18 @@
 <aplicacion>
 
   <entrega>
-
-
     <lote>
-
       <palet>
-
         <numero_cajas></numero_cajas>
-
         <contenido>
           <nombre_componente></nombre_componente>
           <procedencia_paises cantidad="0,1,Varios">España,Japon</procedencia_paises>
           <numero_serie>3819391z</numero_serie>
           <peso_individual unidad="KG">85</peso_individual>
         </contenido>
-
         <peso unidad="KG"></peso>
         <forma_manipulacion></forma_manipulacion>
-
       </palet>
-
     </lote>
-
   </entrega>
-
-
-
-
-
 </aplicacion>
