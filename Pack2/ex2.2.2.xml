@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE fabricante_tractores SYSTEM "ex2.dtd">
+
+<fabricante_tractores>
+    <comanda>
+        <tractor>
+            <componente nom_fabricant="Iker" fragil="false">
+                <fecha_de_entrega>
+                    <dia>01</dia> 
+                    <mes>10</mes>
+                    <any>2015</any>
+                </fecha_de_entrega>
+                <peso unidad="kg">50</peso>
+                <n_serie>231321</n_serie>
+                <kmmaxims>500000</kmmaxims>
+            </componente>
+
+            <componente nom_fabricant="CORREOS" fragil="true">
+                <fecha_de_entrega>
+                    <dia>15</dia>
+                    <mes>11</mes>
+                    <any>2020</any>
+                </fecha_de_entrega>
+                <peso unidad="g">1200</peso>
+                <n_serie>984563</n_serie>
+                <kmmaxims>10000</kmmaxims> 
+            </componente>
+        </tractor>
+
+        <tractor>
+            <componente nom_fabricant="Iker_Aguado" fragil="false"> 
+                <fecha_de_entrega>
+                    <dia>10</dia> 
+                    <mes>07</mes>
+                    <any>2018</any>
+                </fecha_de_entrega>
+                <peso unidad="kg">75</peso>
+                <n_serie>874523</n_serie>
+                <kmmaxims>600000</kmmaxims>
+            </componente>
+        </tractor>
+    </comanda>
+</fabricante_tractores>

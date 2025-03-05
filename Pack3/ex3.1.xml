@@ -1,22 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE entrega [
+    <!ELEMENT entrega (lot+)>
+    <!ELEMENT lot (palet+)>
+    <!ELEMENT palet (caixes, contingut, pes, manipulacio)>
+    <!ELEMENT caixes (#PCDATA)>
+    <!ELEMENT contingut (component+)>
+    <!ELEMENT component (nom, procedencia?, num_serie, pes, unitat_pes?)>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT procedencia (pais*)>
+    <!ELEMENT pais (#PCDATA)>
+    <!ELEMENT num_serie (#PCDATA)>
+    <!ELEMENT pes (#PCDATA)>
+    <!ELEMENT unitat_pes (#PCDATA)>
+    <!ELEMENT manipulacio (#PCDATA)>
+]>
 
-
-
-<aplicacion>
-
-  <entrega>
-    <lote>
-      <palet>
-        <numero_cajas></numero_cajas>
-        <contenido>
-          <nombre_componente></nombre_componente>
-          <procedencia_paises cantidad="0,1,Varios">España,Japon</procedencia_paises>
-          <numero_serie>3819391z</numero_serie>
-          <peso_individual unidad="KG">85</peso_individual>
-        </contenido>
-        <peso unidad="KG"></peso>
-        <forma_manipulacion></forma_manipulacion>
-      </palet>
-    </lote>
-  </entrega>
-</aplicacion>
+<entrega>
+    <lot>
+        <palet>
+            <caixes>10</caixes>
+            <contingut>
+                <component>
+                    <nom>Placa Base</nom>
+                    <procedencia>
+                        <pais>Espanya</pais>
+                        <pais>Alemanya</pais>
+                    </procedencia>
+                    <num_serie>123456789</num_serie>
+                    <pes>1.2</pes>
+                    <unitat_pes>kg</unitat_pes>
+                </component>
+            </contingut>
+            <pes>12.5</pes>
+            <manipulacio>manual</manipulacio>
+        </palet>
+    </lot>
+</entrega>

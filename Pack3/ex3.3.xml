@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE demanat [
+    <!ELEMENT demanat (llibre|quadern|llapis)+>
+    <!ELEMENT llibre (titol)>
+    <!ELEMENT titol (#PCDATA)>
+    <!ELEMENT quadern (num_fulles?)>
+    <!ELEMENT num_fulles (#PCDATA)>
+    <!ELEMENT llapis (numero)>
+    <!ELEMENT numero (#PCDATA)>
+]>
+
+<demanat>
+    <llibre>
+        <titol>El Petit Príncep</titol>
+    </llibre>
+    <quadern>
+        <num_fulles>200</num_fulles>
+    </quadern>
+    <llapis>
+        <numero>HB2</numero>
+    </llapis>
+    <llibre>
+        <titol>1984</titol>
+    </llibre>
+    <llapis>
+        <numero>2B</numero>
+    </llapis>
+</demanat>

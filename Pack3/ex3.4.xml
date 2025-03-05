@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE finances [
+    <!ELEMENT finances (moneda*, bono*)>
+    <!ELEMENT moneda (nom, tipus_canvi+)>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT tipus_canvi (destinació, valor)>
+    <!ELEMENT destinació (#PCDATA)>
+    <!ELEMENT valor (#PCDATA)>
+    <!ELEMENT bono (nom, interès, emissor)>
+    <!ELEMENT interès (#PCDATA)>
+    <!ELEMENT emissor (#PCDATA)>
+]>
+<finances>
+    <moneda>
+        <nom>Euro</nom>
+        <tipus_canvi>
+            <destinació>Dólar</destinació>
+            <valor>1.1</valor>
+        </tipus_canvi>
+        <tipus_canvi>
+            <destinació>Lliura</destinació>
+            <valor>0.85</valor>
+        </tipus_canvi>
+    </moneda>
+    <bono>
+        <nom>Bonos Españoles</nom>
+        <interès>2.5</interès>
+        <emissor>Espanya</emissor>
+    </bono>
+</finances>
